@@ -878,7 +878,7 @@
                         <div class="contacts__bg--h4 theme-bg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <form class="contacts__form" action="#">
+                                    <form class="contacts__form" method="post" action="">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="theme">
@@ -888,36 +888,43 @@
                                             </div>
                                             <div class="col-lg-12 mb-20">
                                                 <div class="contacts__input contacts__input--h4 position-relative">
-                                                    <input type="text" placeholder="Full Name Here">
+                                                    <input name="name" id="name" type="text" placeholder="Full Name Here">
                                                     <i class="fal fa-user"></i>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 mb-20">
                                                 <div class="contacts__input contacts__input--h4 position-relative">
-                                                    <input type="text" placeholder="Enter Your Email">
+                                                    <input name="email" id="email" type="text" placeholder="Enter Your Email">
                                                     <i class="fal fa-envelope-open"></i>
                                                 </div>
                                             </div>
-                                            <!-- <div class="col-lg-12 mb-20">
-                                                <div class="contacts__input contacts__input--h4 position-relative">
-                                                    <select>
-                                                        <option value="1">I Would</option>
-                                                        <option value="2">Discussed</option>
+                                            <div class="col-lg-12 mb-20">
+                                                <div class="contacts__input contacts__input--h4 position-relative ml-2">
+                                                    <select name="subject" id="category">
+                                                        <option style="color: #0b0b0b" value="2">Discussed</option>
                                                         <option value="3">Would To </option>
-                                                        <option value="4">To Like</option>
+                                                        <option selected value="4">To Like</option>
+                                                        <option value="1">I Would</option>
+
                                                     </select>
                                                     <i class="fal fa-angle-down"></i>
                                                 </div>
-                                            </div> -->
+                                            </div>
                                             <div class="col-sm-12 mb-30">
                                                 <div class="contacts__input contacts__input--h4 position-relative">
-                                                    <textarea placeholder="Write Here"></textarea>
+                                                    <textarea name="message" id="message" placeholder="Write Here"></textarea>
                                                     <!-- <i class="fal fa-angle-down"></i> -->
                                                 </div>
                                             </div>
+
+                                            <div class="mt-3 ml-3">
+                                                <div id="alertSuccess" class="alert alert-success" style="width: 100%"></div>
+                                                <div id="alertError" class="alert alert-danger" style="width: 100%"></div>
+                                            </div>
+
                                             <div class="col-sm-12">
                                                 <div class="contacts__input contacts__input--h4 position-relative">
-                                                    <button class="btn btn--icon theme-color">send message</button>
+                                                    <button id="submit" type="button" class="btn btn--icon theme-color">send message</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -985,6 +992,7 @@
                             <div class="footer__menu">
                                 <ul>
                                     <li><a href="#services">Our Services</a></li>
+
                                     <!-- <li><a href="#">Latest News</a></li> -->
                                     <li><a href="#team">Meet Consultant</a></li>
                                     <li><a href="#about">Company History</a></li>
@@ -1098,6 +1106,8 @@
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="js/contact.js"></script>
     <!-- All External JavaScript Links Here End -->
 
     <script>
@@ -1118,6 +1128,7 @@
                 navbar.classList.remove("fixed-top");
             }
         }
+        
     </script>
 </body>
 

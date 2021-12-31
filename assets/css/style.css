@@ -4749,8 +4749,22 @@ label {
 }
 
 .contacts__input input,
-.contacts__input select,
+
 .contacts__input textarea {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom: 3px solid #444067;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.contacts__input select{
   width: 100%;
   padding: 0;
   background: transparent;
