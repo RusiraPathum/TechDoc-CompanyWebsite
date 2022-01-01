@@ -7,11 +7,13 @@ if ($_POST["id"] == "contact"){
     $message = $_POST['message'];
     $category = $_POST['category'];
 
-    $to = "secraterywththala@gmail.com";
-    $mailSubject =  "Secretary Divisions Account Created..";
+    $to = "info@mcxpert.com";
+    $mailSubject =  "McXpert New Inquiry..";
 
-    $emailBody = "Your <b>Username :</b> $email <br>";
-    $emailBody .= "Your <b>Password :</b> $category <br>Thank You !";
+    $emailBody = "Client <b>Name :</b> $name <br>";
+    $emailBody = "Client <b>Email :</b> $email <br>";
+    $emailBody .= "Inquiry <b>Category :</b> $category <br>";
+    $emailBody .= "Client <b>Message :</b> $message <br>Thank You !";
 
     $header = "From:$email\r\nContent-Type: text/html;";
 
