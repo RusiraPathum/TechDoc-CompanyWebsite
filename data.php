@@ -10,8 +10,10 @@ if ($_POST["id"] == "contact"){
     $to = "info@mcxpert.com";
     $mailSubject =  "McXpert New Inquiry..";
 
-    $emailBody = "Client <b>Name :</b> $name <br>";
-    $emailBody = "Client <b>Email :</b> $email <br>";
+    $emailBody = "";
+
+    $emailBody .= "Client <b>Name :</b> $name <br>";
+    $emailBody .= "Client <b>Email :</b> $email <br>";
     $emailBody .= "Inquiry <b>Category :</b> $category <br>";
     $emailBody .= "Client <b>Message :</b> $message <br>Thank You !";
 
