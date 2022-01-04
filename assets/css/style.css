@@ -6780,7 +6780,34 @@ label {
   margin-bottom: 30px;
 }
 
+#work__block>i {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  line-height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  font-size: 40px;
+  color: #221f3c;
+  margin-bottom: 30px;
+}
+
 .work__block>i span {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  font-size: 14px;
+  background: #221f3c;
+  line-height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  left: -3px;
+  top: -13px;
+  font-family: "Cerebri Sans";
+  font-weight: 600;
+}
+
+#work__block>i span {
   position: absolute;
   height: 35px;
   width: 35px;
@@ -6808,6 +6835,7 @@ label {
   content: url(../images/shape/work-separate-shape.png);
   right: -153px;
   top: 34px;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
